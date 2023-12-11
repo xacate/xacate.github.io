@@ -1,6 +1,6 @@
 ### npm 
 ```shell
-    npm install x-plugins@git+https://xacate.github.io/xplugins
+    npm install x-plugins@https://xacate.github.io/xplugins/x-plugins.tgz
  ```
  ```js 
     //use
