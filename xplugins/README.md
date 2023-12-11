@@ -1,6 +1,8 @@
 ### npm 
 ```shell
-    npm install x-plugins@https://xacate.github.io/xplugins/x-plugins.tgz
+    npm install x-plugins@https://xacate.github.io/xplugins/x-plugins.tar.gz
+    or 
+    yarn add x-plugins@https://xacate.github.io/xplugins/x-plugins.tar.gz
  ```
  ```js 
     //use
