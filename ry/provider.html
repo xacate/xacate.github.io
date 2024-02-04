@@ -1,0 +1,41 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Provider</title>
+  </head>
+  <body>
+    <div>
+      <span>This Guide</span>
+      <span id="id">Token:</span>
+    </div>
+    <script>
+      let isLogin = false;
+      function setToken(token) {
+        console.log(token);
+        if (token != null) {
+          isLogin = true;
+          document.querySelector("#id").innerHTML = "Token: " + token;
+        }
+      }
+      function waitLoginResult() {
+        const timer = setInterval(() => {
+          if (isLogin) {
+            clearInterval(timer);
+          }
+        });
+      }
+      const timer = setInterval(() => {
+        if (webObj != undefined) {
+          clearInterval(timer);
+          webObj.postMessage(
+            JSON.stringify({
+              cmd: "getToken",
+            })
+          );
+          waitLoginResult();
+        }
+      }, 100);
+    </script>
+  </body>
+</html>
