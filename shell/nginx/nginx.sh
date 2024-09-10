@@ -1,8 +1,9 @@
 ###  安装nginx 
-### http://nginx.org/download/nginx-1.18.0.tar.gz
+### http://nginx.org/download/nginx-1.27.1.tar.gz
 cd 
-nginxTar="nginx-1.18.0.tar.gz"
-nginxDir="nginx-1.18.0"
+version="1.27.1"
+nginxTar="nginx-$version.tar.gz"
+nginxDir="nginx-$version"
 nginx="/usr/local/nginx"
 
 echo "Nginx 所需环境"
@@ -16,16 +17,16 @@ env(){
 }
 download(){
   if [ ! -f $nginxTar ];then
-    wget http://nginx.org/download/nginx-1.18.0.tar.gz
+    wget http://nginx.org/download/nginx-$version.tar.gz
   else
-    echo "nginx-1.18.0.tar.gz 文件已存在"
+    echo "nginx-$version.tar.gz 文件已存在"
   fi
 }
 install(){
   if [ ! -f $nginxTar ];then
-    wget http://nginx.org/download/nginx-1.18.0.tar.gz
+    wget http://nginx.org/download/nginx-$version.tar.gz
   else
-    echo "nginx-1.18.0.tar.gz 文件已存在"
+    echo "nginx-$version.tar.gz 文件已存在"
   fi
   if [ ! -d "$nginxDir" ];then
     tar -zxvf $nginxTar
