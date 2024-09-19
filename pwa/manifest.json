@@ -2,7 +2,7 @@
     "name": "My Awesome Web App",
     "short_name": "Awesome App",
     "start_url": "./index.html",
-    "display": "standalone",
+    "display": "full",
     "background_color": "#fff",
     "theme_color": "#fff",
     "icons": [
