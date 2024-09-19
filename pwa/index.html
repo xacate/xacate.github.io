@@ -45,11 +45,14 @@
             // alert("等待安装")
             div.innerHTML = "安装成功"
         })
-        // if ("serviceWorker" in navigator) {
-        //     window.addEventListener('load', () => {
-        //         navigator.serviceWorker.register("./serviceWorker.js")
-        //     })
-        // }
+        if ("serviceWorker" in navigator) {
+            window.addEventListener('load', () => {
+                const div = document.querySelector("#text");
+                // alert("等待安装")
+                div.innerHTML = "未加载worker"
+                // navigator.serviceWorker.register("./serviceWorker.js")
+            })
+        }
     </script>
 </body>
 
