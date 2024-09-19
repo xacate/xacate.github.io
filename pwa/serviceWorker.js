@@ -9,26 +9,18 @@ self.addEventListener('install', function (event) {
         })
     );
 });
-// 缓存接口数据
-self.addEventListener('fetch', function (event) {
-    event.respondWith(caches.match(event.request).then(function (response) {
-        // 匹配到请求
-        if (response !== undefined) {
-            return response;
-        } else {
-            return fetch(event.request).then(function (response) {
-                // 缓存响应数据
-                let responseClone = response.clone();
-
-                caches.open('v1').then(function (cache) {
-                    cache.put(event.request, responseClone);
-                });
-                return response;
-            }).catch(function () {
-                return caches.match('/gallery/myLittleVader.jpg');
-            });
-        }
-    }));
+self.addEventListener('fetch', function(event) {
+    event.respondWith(
+        caches.match(event.request)
+            .then(function(response) {
+                //该fetch请求已经缓存
+                if (response) {
+                    return response;
+                }
+                return fetch(event.request);
+                }
+            )
+    );
 });
 
 
