@@ -24,9 +24,10 @@
                 div.style.display = 'block'
             }
             deferredPrompt = event;
-            setTimeout(() => {
-                install()
-            }, 2000)
+            install()
+            // setTimeout(() => {
+            //     install()
+            // }, 2000)
         })
         function install() {
             console.log("点击", deferredPrompt)
@@ -45,14 +46,15 @@
             // alert("等待安装")
             div.innerHTML = "安装成功"
         })
-   
+
+        window.addEventListener('load', () => {
+            const div = document.querySelector("#text");
+            // alert("等待安装")
+            div.innerHTML = "未加载worker"
+            // navigator.serviceWorker.register("./serviceWorker.js")
+        })
         if ("serviceWorker" in navigator) {
-            window.addEventListener('load', () => {
-                const div = document.querySelector("#text");
-                // alert("等待安装")
-                div.innerHTML = "未加载worker"
-                // navigator.serviceWorker.register("./serviceWorker.js")
-            })
+
         }
     </script>
 </body>
