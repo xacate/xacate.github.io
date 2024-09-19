@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="manifest.json" href="./manifest.json">
+</head>
+<body>
+    <div onclick="install()">点击</div>
+    <script>
+        window.onload = function(){
+            if(window.isStandalone===true || window.navigator.standalone){
+                return;
+            }
+            if(!("standalone" in window.navigator)){
+                return;
+            }
+            navigator.permissions.query({name: 'add_to_home_screen'}).then((permission => {
+                if(permission.state == 'grandted'){
+                    return;
+                }
+                else if(permission.state == 'prompt'){
+                    permission.request().then(() => {
+                        addWebsiteToHomeScreen()
+                    })
+                }else {
+                    alert("用户拒绝了")
+                }
+            }))
+        }
+
+        let deferredPrompt
+        window.addEventListener("beforeinstallprompt", (event) => {
+            event.preventDefault()
+            deferredPrompt = event;
+            setTimeout(() => {
+                install()
+            }, 2000)
+        })
+        function install(){
+            console.log("点击", deferredPrompt)
+            deferredPrompt.prompt();
+            deferredPrompt.userChoice.then((choiceResult) => {
+                if(choiceResult.outcome == 'accepted'){
+
+                }
+                console.log(deferredPrompt);
+                
+            })
+
+        }
+
+        if("serviceWorker" in navigator){
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register("./serviceWorker.js")
+            })
+        }
+    </script>
+</body>
+</html>
