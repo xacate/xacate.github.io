@@ -1,60 +1,45 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="manifest" href="./manifest.json">
 </head>
-<body>
-    <button onclick="install()">点击</button>
-    <script>
-        window.onload = function(){
-            if(window.isStandalone===true || window.navigator.standalone){
-                return;
-            }
-            if(!("standalone" in window.navigator)){
-                return;
-            }
-            navigator.permissions.query({name: 'add_to_home_screen'}).then((permission => {
-                if(permission.state == 'grandted'){
-                    return;
-                }
-                else if(permission.state == 'prompt'){
-                    permission.request().then(() => {
-                        addWebsiteToHomeScreen()
-                    })
-                }else {
-                    alert("用户拒绝了")
-                }
-            }))
-        }
 
+<body>
+    <button>点击测试</button>
+    <button id="install" style="display: none;" onclick="install()">安装</button>
+    <script>
         let deferredPrompt
         window.addEventListener("beforeinstallprompt", (event) => {
             event.preventDefault()
+            const div = document.querySelector("#install");
+            if(div){
+                div.style.display = 'block'
+            }
             deferredPrompt = event;
             setTimeout(() => {
                 install()
             }, 2000)
         })
-        function install(){
+        function install() {
             console.log("点击", deferredPrompt)
             deferredPrompt.prompt();
             deferredPrompt.userChoice.then((choiceResult) => {
-                if(choiceResult.outcome == 'accepted'){
-
+                alert("等待安装")
+                if (choiceResult.outcome == 'accepted') {
+                    alert("安装成功")
                 }
                 console.log(deferredPrompt);
-                
             })
-
         }
-
-        if("serviceWorker" in navigator){
+        if ("serviceWorker" in navigator) {
             window.addEventListener('load', () => {
                 navigator.serviceWorker.register("./serviceWorker.js")
             })
         }
     </script>
 </body>
+
 </html>
