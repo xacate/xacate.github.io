@@ -46,7 +46,7 @@
             div.innerHTML = "安装成功"
         })
         if ("serviceWorker" in navigator) {
-            window.addEventListener('load', () => {
+            window.addEventListener('loaded', () => {
                 const div = document.querySelector("#text");
                 // alert("等待安装")
                 div.innerHTML = "未加载worker"
