@@ -4,12 +4,7 @@ self.addEventListener('install', function(event) {
       // 缓存指定文件
     caches.open('v1').then(function(cache) {
       return cache.addAll([
-        '/',
-        '/index.html',
-        '/style.css',
-        '/app.js',
-        '/image-list.js',
-        '/star-wars-logo.jpg',
+        'index.html',
       ]);
     })
   );
