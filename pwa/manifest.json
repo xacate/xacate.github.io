@@ -1,11 +1,10 @@
 {
     "name": "My Awesome Web App",
     "short_name": "Awesome App",
-    "start_url": "./test.html",
+    "start_url": "./index.html",
     "display": "fullscreen",
     "background_color": "#fff",
     "theme_color": "#fff",
-    "prefer_related_applications": "true",
     "icons": [
         {
             "src": "icon.png",
