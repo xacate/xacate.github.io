@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="manifest" href="./manifest.json">
+    <script src="https://unpkg.com/vconsole@latest/dist/vconsole.min.js"></script>
 </head>
 
 <body>
@@ -16,6 +17,7 @@
     <div id="text"></div>
     <a download="./wengao.mobileconfig" href="./wengao.mobileconfig">iOS 安装</a>
     <script>
+        var vConsole = new window.VConsole();
         let deferredPrompt
         window.addEventListener("beforeinstallprompt", (event) => {
             event.preventDefault()
