@@ -1,1 +1,0 @@
-{"__type__":"sp.SkeletonData","_name":"fx_ground_merge","_native":".bin","_atlasText":"\nfx_ground_merge.png\nsize: 292,212\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nl0\n  rotate: false\n  xy: 2, 2\n  size: 285, 206\n  orig: 285, 206\n  offset: 0, 0\n  index: -1\n","textures":[{"__uuid__":"9dTvZDIv9JwJFfpW+ktUVO"}],"textureNames":["fx_ground_merge.png"]}
