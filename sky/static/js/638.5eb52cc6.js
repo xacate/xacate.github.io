@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkskyweb=self.webpackChunkskyweb||[]).push([[638],{16257:function(e,n,c){c.r(n),c.d(n,{default:function(){return a}});var t=c(20641);const s={class:"content",src:"/404.html"};const r={};var a=(0,c(66262).A)(r,[["render",function(e,n){return(0,t.uX)(),(0,t.CE)("iframe",s)}],["__scopeId","data-v-2c1a0bca"]])}}]);

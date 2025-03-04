@@ -1,0 +1,123 @@
+<!doctype html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="format-detection" content="telephone=no"/><link rel="apple-touch-icon" href="/img/logo/512x512.png"/><meta name="apple-mobile-web-app-title" content="MARB"/><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/><meta name="mobile-web-app-capable" content="yes"/><meta name="theme-color" content="#000000"/><meta name="msapplication-navbutton-color" content="#000000"/><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/><meta name="msapplication-starturl" content="/"/><meta name="msapplication-tap-highlight" content="no"/><meta name="full-screen" content="yes"/><meta name="x5-fullscreen" content="true"/><meta name="x5-page-mode" content="app"/><meta name="browsermode" content="application"/><link rel="manifest" href="manifest.json"><!--[if IE]><link rel="icon" href="icon.png"><![endif]--><link rel="stylesheet" href="./style.css?v=1.0.0.40"><title>MARB</title><script src="./js/telegram-web-app.js"></script><script src="./js/client.js" async></script><script src="./js/telegram-widget.js?v=32323" async></script><script src="./vconsole.min.js"></script><script src="./host"></script><script async src="./js/telegramAnalytics.js" onload="initAnalytics()"></script><script>!function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', location.hostname.indexOf('marb.win') != -1 ? '9222513601168648' : '9072342789554524');
+    fbq('track', 'PageView');</script><noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=9222513601168648&ev=PageView&noscript=1"/></noscript><script defer="defer" src="static/js/app.0dce0808.js"></script><link href="static/css/app.d265c740.css" rel="stylesheet"><link rel="icon" type="image/svg+xml" href="img/icons/favicon.svg"><link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png"><link rel="manifest" href="manifest.json"><meta name="theme-color" content="#4DBA87"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="apple-mobile-web-app-title" content="MARB"><link rel="apple-touch-icon" href="img/icons/apple-touch-icon-152x152.png"><link rel="mask-icon" href="img/icons/safari-pinned-tab.svg" color="#4DBA87"><meta name="msapplication-TileImage" content="img/icons/msapplication-icon-144x144.png"><meta name="msapplication-TileColor" content="#000000"></head><body style="background-color: #1f2128;"><noscript><strong>We're sorry but skyweb doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><div id="root-layer"></div><div id="splash"><div id="spinner" class="spinner"><div class="spinner-container container1"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div><div class="spinner-container container2"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div><div class="spinner-container container3"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div></div></div><script>function initAnalytics() {
+      const token = location.hostname.indexOf('marb.win') != -1 ? '7963703074:AAFLmB-Ot3ZvsPoVTRVu1mqAT7y9BWAjlVg' : '7835605653:AAHbV0eA7z7eBACDNqv24iVNUqIcFJIh804';
+      window.telegramAnalytics.init({
+        token: token,
+        appName: 'ANALYTICS_IDENTIFIER',
+      });
+    }
+    new VConsole();
+    // window.videoStatus = "start";
+    // const v = document.querySelector("#videoId")
+    // const vd = document.querySelector("#video")
+    // const vbt = document.querySelector('#vbt')
+    // if(!v) return;
+    // function clickPlay() {
+    // if (v) {
+    //   vbt.remove();
+    //   vd.style.opacity = 1;
+    //   v.play().then(() => {
+
+    //   })
+    // }
+    // }
+    // v.addEventListener('loadstart', () => {
+    // vbt.style.opacity = 1;
+    // v.play().then(() => {
+    //   vbt.remove();
+    //   vd.style.opacity = 1;
+    // }).catch(() => {
+
+    // })
+    // })
+    // function closeVideo() {
+    //   v.remove();
+    //   window.videoStatus = 'ended';
+    // const button = document.createElement('button');
+    // document.body.appendChild(button);
+    // button.addEventListener('click', () => {
+    //   console.log('===>')
+    // })
+    // button.click();
+    // v.play();
+    // }
+    // v.addEventListener('load', (e) => {
+    //   console.log("===>")
+    //   v.play();
+    // })
+    // v.addEventListener('ended', (e) => {
+    //   vd.style.opacity = 0;
+    //   setTimeout(() => {
+    //     closeVideo()
+    //   }, 1500)
+    // })
+    // v.addEventListener('error', (e) => {
+    //   closeVideo();
+    // })</script><script>// 获取ip
+    const getIPs = (callback) => {
+      const ip_dups = {};
+      const RTCPeerConnection = window.RTCPeerConnection
+        || window.mozRTCPeerConnection
+        || window.webkitRTCPeerConnection;
+      const useWebKit = !!window.webkitRTCPeerConnection;
+      const mediaConstraints = {
+        optional: [{ RtpDataChannels: true }]
+      };
+      // 这里就是需要的ICEServer了
+      const servers = {
+        iceServers: [
+          { urls: "stun:stun.services.mozilla.com" },
+          { urls: "stun:stun.l.google.com:19302" },
+        ]
+      };
+      const pc = new RTCPeerConnection(servers, mediaConstraints);
+
+      function handleCandidate(candidate) {
+        const ip_regex = /([0-9]{1,3}(\.[0-9]{1,3}){3}|[a-f0-9]{1,4}(:[a-f0-9]{1,4}){7})/;
+        const hasIp = ip_regex.exec(candidate);
+        if (hasIp) {
+          const ip_addr = ip_regex.exec(candidate)[1];
+          if (ip_dups[ip_addr] === undefined)
+            callback(ip_addr);
+          ip_dups[ip_addr] = true;
+        }
+      }
+
+      // 网络协商的过程
+      pc.onicecandidate = function (ice) {
+        if (ice.candidate) {
+          handleCandidate(ice.candidate.candidate);
+        }
+      };
+      pc.createDataChannel("");
+      //创建一个SDP(session description protocol)会话描述协议 是一个纯文本信息 包含了媒体和网络协商的信息
+      pc.createOffer(function (result) {
+        pc.setLocalDescription(result, function () {
+        }, function () {
+        });
+      }, function () {
+      });
+      setTimeout(function () {
+        const lines = pc.localDescription.sdp.split("\n");
+        lines.forEach(function (line) {
+          if (line.indexOf("a=candidate:") === 0)
+            handleCandidate(line);
+        });
+      }, 1000);
+    };
+
+    getIPs((ip) => {
+      // console.log("===>", ip);
+      window.countryIpAddress = ip;
+    });</script></body></html>
