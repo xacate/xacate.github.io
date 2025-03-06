@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>MARB</title>
+    <link rel="icon" href="./icon.png">
+    <link rel="manifest" href="manifest.json">
+    <script src="./registerServiceWorker.js" module></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body style="background-color: #1f2128;">
+    <div class=" flex-column h-1 flex-center">
+        <div style="margin-bottom: 20px;">
+            <img src="./img/logo/logo.png" alt="MARB" style="width: 100px;">
+        </div>
+        <img style="width: 70%;" src="./img/1.png" alt="">
+        <img style="width: 40%;margin: 20px 0;" onclick="clickHandler('iOS')" src="./img/2.png" alt="">
+        <img style="width: 40%;" src="./img/3.png" alt="" onclick="clickHandler('Android')">
+    </div>
+
+    <script>
+        let deferredPrompt;
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+        });
+        function clickHandler(info) {
+            window.alert(info);
+            if (info === 'iOS') {
+                window.open('./marb.mobileconfig')
+                return;
+            }
+            if (!deferredPrompt) {
+                return;
+            }
+            if (deferredPrompt == undefined) {
+                return;
+            }
+            deferredPrompt.prompt();
+            deferredPrompt.userChoice.then((choice) => {
+                if (choice.outcome === 'accepted') {
+                    console.log('Web App installed.');
+                } else {
+                    console.log('User cancelled home screen install.');
+                }
+                // deferredPrompt = null; // 重置提示变量。
+            });
+        }
+    </script>
+</body>
+
+</html>
