@@ -339,3 +339,11 @@ img {
 .h-0 {
     height: 0;
 }
+
+
+#app {
+    height: 100%;
+    width: 100%;
+    font-weight: 600;
+    font-family: Arial, sans-serif;
+}
