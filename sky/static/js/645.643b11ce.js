@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkskyweb=self.webpackChunkskyweb||[]).push([[645],{7645:function(e,n,c){c.r(n),c.d(n,{default:function(){return l}});var t=c(5918);const r={class:"h-1 scroll flex-column tk-p-20 max-width"};const s={};var l=(0,c(6262).A)(s,[["render",function(e,n){return(0,t.openBlock)(),(0,t.createElementBlock)("div",r)}]])}}]);
