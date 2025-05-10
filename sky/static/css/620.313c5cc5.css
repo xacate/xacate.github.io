@@ -1,0 +1,65 @@
+.content[data-v-733af3b2]{background-image:url(/static/img/banner-back.7d33016f.png);border-radius:0.3125rem;background-repeat:no-repeat;background-size:cover;height:18.75rem}.content.g[data-v-733af3b2]{background-image:url(/static/img/s-12.d47f8e7b.png)}@media screen and (max-width: 48rem){.content[data-v-733af3b2]{height:8.125rem}}.content .icon[data-v-733af3b2]{right:10%;height:100%}.content .content-div[data-v-733af3b2]{position:absolute;width:50%;height:80%;left:5%}
+.detail-color[data-v-878d0580]{color:#808191;display:flex;justify-content:center;align-items:center}.header[data-v-878d0580]{gap:0.625rem}.header>div[data-v-878d0580]{color:#808191;display:flex;justify-content:center;align-items:center}.header .flex-h-2[data-v-878d0580]{flex:2 2 0}.header .flex-h-1[data-v-878d0580]{flex:1 1 0}.item[data-v-878d0580]{gap:0.625rem}.item>div[data-v-878d0580]{color:#fff;display:flex;justify-content:center;align-items:center}.item .flex-h-2[data-v-878d0580]{flex:2 2 0}.item .flex-h-1[data-v-878d0580]{flex:1 1 0}
+.t[data-v-7b147c47]{border:0.0625rem dashed hsla(0,0%,80%,.4);margin:0.625rem 0;padding:0.625rem}
+.t[data-v-20a78f44]{gap:0.625rem}.t>img[data-v-20a78f44]{width:calc(20% - 0.625rem);max-width:6.25rem}.b[data-v-20a78f44]{width:100%;max-width:62.5rem}
+.width-flex-1[data-v-a839801a]{flex:1 1 0;display:flex;padding:0 2.5rem}@media screen and (max-width: 48rem){.width-flex-1[data-v-a839801a]{padding:0 1.25rem}}.width-flex-3[data-v-a839801a]{flex:1 1 0;display:flex;padding:0 2.5rem}@media screen and (max-width: 48rem){.width-flex-3[data-v-a839801a]{padding:0 1.25rem}}
+.v-slide-group {
+  display: flex;
+  overflow: hidden;
+}
+
+.v-slide-group__next,
+.v-slide-group__prev {
+  align-items: center;
+  display: flex;
+  flex: 0 1 52px;
+  justify-content: center;
+  min-width: 52px;
+  cursor: pointer;
+}
+.v-slide-group__next--disabled,
+.v-slide-group__prev--disabled {
+  pointer-events: none;
+  opacity: var(--v-disabled-opacity);
+}
+
+.v-slide-group__content {
+  display: flex;
+  flex: 1 0 auto;
+  position: relative;
+  transition: 0.2s all cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+}
+.v-slide-group__content > * {
+  white-space: initial;
+}
+
+.v-slide-group__container {
+  contain: content;
+  display: flex;
+  flex: 1 1 auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  scrollbar-color: rgba(0, 0, 0, 0);
+}
+.v-slide-group__container::-webkit-scrollbar {
+  display: none;
+}
+
+.v-slide-group--vertical {
+  max-height: inherit;
+}
+.v-slide-group--vertical,
+.v-slide-group--vertical .v-slide-group__container,
+.v-slide-group--vertical .v-slide-group__content {
+  flex-direction: column;
+}
+.v-slide-group--vertical .v-slide-group__container {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.game-item .back-item[data-v-4982a41b]{background-color:#333436;margin:0.625rem;border-radius:0.625rem;padding:0 0.3125rem}.game-item .bt-item[data-v-4982a41b]{padding:0 0.3125rem}@media screen and (max-width: 48rem){.game-item .bt-item[data-v-4982a41b]{padding:0}}[data-v-4982a41b] .v-slide-group__container{padding:0 0 !important}.item[data-v-4982a41b]{width:8.6875rem;height:10.9375rem;margin:0 0.3125rem;border-radius:0.5rem;overflow:hidden;background-color:hsla(0,0%,100%,.062745098);transition:all .25s}@media screen and (max-width: 48rem){.item[data-v-4982a41b]{width:7.75rem;height:9.8125rem;border-radius:0.5rem;margin:0 0.25rem}}.item[data-v-4982a41b]:hover{transform:translateY(-0.3125rem)}[data-v-4982a41b] .v-slide-group__container{padding:0 0.625rem}
+.no[data-v-7aa1688d]{overflow-y:hidden}.no[data-v-7aa1688d]::-webkit-scrollbar{height:0.625rem;cursor:pointer}.no[data-v-7aa1688d]::-webkit-scrollbar-thumb{background-color:hsla(0,0%,100%,.0666666667);border-radius:0.625rem}@media screen and (max-width: 47.25rem){.no[data-v-7aa1688d]::-webkit-scrollbar{width:0;height:0}}
+.back[data-v-777d50c7]{border-radius:0.625rem;background:linear-gradient(-45deg, #18181a, #192020, #192020, #192122, #19302c, #19382c)}
+.item[data-v-07e8d725]{flex:1 1 0;min-width:7.5rem;cursor:pointer;overflow:hidden;background-color:hsla(0,0%,100%,.062745098);transition:all .25s}@media screen and (max-width: 48rem){.item[data-v-07e8d725]{height:9.8125rem}}.game-empty[data-v-07e8d725]{flex:1 1 0;min-width:7.5rem;height:0}@media screen and (max-width: 48rem){.game-empty[data-v-07e8d725]{min-width:7.75rem}}

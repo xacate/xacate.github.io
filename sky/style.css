@@ -20,6 +20,9 @@ body {
 
   
 }
+body{
+    background-color: #1f2128;
+}
 
 img {
     object-fit: cover;
